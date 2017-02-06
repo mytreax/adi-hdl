@@ -11,6 +11,7 @@ all:
 	-make -C kc705 all
 	-make -C kcu105 all
 	-make -C mitx045 all
+	-make -C mitx100 all
 	-make -C vc707 all
 	-make -C zc702 all
 	-make -C zc706 all
@@ -22,6 +23,7 @@ clean:
 	make -C kc705 clean
 	make -C kcu105 clean
 	make -C mitx045 clean
+	make -C mitx100 clean
 	make -C vc707 clean
 	make -C zc702 clean
 	make -C zc706 clean
@@ -33,6 +35,7 @@ clean-all:
 	make -C kc705 clean-all
 	make -C kcu105 clean-all
 	make -C mitx045 clean-all
+	make -C mitx100 clean-all
 	make -C vc707 clean-all
 	make -C zc702 clean-all
 	make -C zc706 clean-all
