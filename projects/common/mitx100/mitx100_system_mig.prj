@@ -7,7 +7,7 @@
     <Debug_En>OFF</Debug_En>
     <DataDepth_En>1024</DataDepth_En>
     <LowPower_En>ON</LowPower_En>
-    <XADC_En>Enabled</XADC_En>
+    <XADC_En>Disabled</XADC_En>
     <TargetFPGA>xc7z100-ffg900/-2</TargetFPGA>
     <Version>2.0</Version>
     <SystemClock>Differential</SystemClock>
@@ -23,7 +23,7 @@
         <VccAuxIO>1.8V</VccAuxIO>
         <PHYRatio>4:1</PHYRatio>
         <InputClkFreq>200</InputClkFreq>
-        <UIExtraClocks>0</UIExtraClocks>
+        <UIExtraClocks>1</UIExtraClocks>
         <MMCMClkOut0> 1.000</MMCMClkOut0>
         <MMCMClkOut1>1</MMCMClkOut1>
         <MMCMClkOut2>1</MMCMClkOut2>
@@ -151,8 +151,8 @@
             <C0_C_RD_WR_ARB_ALGORITHM>RD_PRI_REG</C0_C_RD_WR_ARB_ALGORITHM>
             <C0_S_AXI_ADDR_WIDTH>29</C0_S_AXI_ADDR_WIDTH>
             <C0_S_AXI_DATA_WIDTH>256</C0_S_AXI_DATA_WIDTH>
-            <C0_S_AXI_ID_WIDTH>12</C0_S_AXI_ID_WIDTH>
-            <C0_S_AXI_SUPPORTS_NARROW_BURST>0</C0_S_AXI_SUPPORTS_NARROW_BURST>
+            <C0_S_AXI_ID_WIDTH>4</C0_S_AXI_ID_WIDTH>
+            <C0_S_AXI_SUPPORTS_NARROW_BURST>1</C0_S_AXI_SUPPORTS_NARROW_BURST>
         </AXIParameters>
     </Controller>
 
