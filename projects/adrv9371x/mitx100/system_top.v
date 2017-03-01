@@ -136,7 +136,7 @@ module system_top (
   ad9371_gpio_16,
   ad9371_gpio_18,
 
-  sys_rst,
+//  sys_rst,
   sys_clk_p,
   sys_clk_n,
 
@@ -251,7 +251,7 @@ module system_top (
   inout           ad9371_gpio_16;
   inout           ad9371_gpio_18;
 
-  input           sys_rst;
+//  input           sys_rst;
   input           sys_clk_p;
   input           sys_clk_n;
 
@@ -358,6 +358,9 @@ module system_top (
     .dio_i (gpio_o[14:0]),
     .dio_o (gpio_i[14:0]),
     .dio_p (gpio_bd));
+
+  wire sys_rst;
+  assign sys_rst = 0;
 
   system_wrapper i_system_wrapper (
     .dac_fifo_bypass (gpio_o[60]),
